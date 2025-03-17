@@ -2,6 +2,8 @@ import torch
 import torchvision
 from torchvision import transforms, models
 from torch.utils.data import DataLoader, Dataset
+# Numpy compatibility fix
+# Numpy compatibility fix
 import numpy as np
 np.int = int
 np.float = float
@@ -96,7 +98,8 @@ def predict(model, img):
 
 def load_model(model_path, sequence_length):
     model = Model(2).to(device)
-    model.load_state_dict(torch.load(model_path, map_location=device))
+    # Add strict=False for compatibility
+    model.load_state_dict(torch.load(model_path, map_location=device), strict=False)
     model.eval()
     return model
 
