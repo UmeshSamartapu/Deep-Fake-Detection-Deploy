@@ -3,7 +3,11 @@ import torchvision
 from torchvision import transforms, models
 from torch.utils.data import DataLoader, Dataset
 # Numpy compatibility fix
+# Numpy compatibility fix
 import numpy as np
+np.int = int
+np.float = float
+np.object = object
 np.int = int
 np.float = float
 np.object = object
