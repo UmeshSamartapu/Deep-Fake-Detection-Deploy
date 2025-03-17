@@ -10,3 +10,51 @@ venv/
 *.mp4
 *.avi
 *.mov
+
+
+__pycache__/
+*.pyc
+.env
+venv/
+.DS_Store
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyTorch model files
+# Remove or comment out these lines
+# *.pt
+# *.pth
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Flask instance folder
+instance/
+
+# Temporary files created by the OS
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Other files to ignore
+*.csv
+*.json
+*.h5
