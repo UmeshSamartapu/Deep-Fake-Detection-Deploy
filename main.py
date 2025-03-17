@@ -3,6 +3,12 @@ import torchvision
 from torchvision import transforms, models
 from torch.utils.data import DataLoader, Dataset
 import numpy as np
+np.int = int
+np.float = float
+np.object = object
+np.int = int
+np.float = float
+np.object = object
 import cv2
 import face_recognition
 from torch import nn
