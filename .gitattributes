@@ -1,0 +1,12 @@
+*.pt filter=lfs diff=lfs merge=lfs -text
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+# *.pt  # Remove this line since you need to include your model
+*.mp4
+*.avi
+*.mov
